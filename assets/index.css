@@ -1,0 +1,139 @@
+html,
+body,
+div,
+img,
+ol,
+ul,
+li,
+footer,
+header,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  line-height: 1.5em;
+  margin: 0;
+  overflow-y: scroll;
+}
+
+section {
+  padding: 3em;
+  height: calc(100vh - 6em);
+}
+footer {
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
+  line-height: 2em;
+}
+
+.subheader {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 500;
+}
+.color_orange {
+  color: #d59f4f;
+}
+.contrast_yellow {
+  color: #fff500;
+}
+.hero {
+  background-color: #152b4d;
+  color: #dbdee3;
+}
+
+.edu {
+  background-color: #76a790;
+  color: #152b4d;
+}
+
+.snap {
+  scroll-snap-type: y mandatory;
+  -webkit-scroll-snap-type: mandatory;
+  -webkit-scroll-snap-points-x: repeat(100%);
+}
+/* ignore */
+.snap_element {
+  scroll-snap-align: start; /* implement scroll snapping */
+  /* -webkit-scroll-snap-coordinate: 0% 0%; */
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1600px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  section {
+    padding: 4em;
+    height: calc(100vh - 6em);
+  }
+  .hero hgroup {
+    margin-bottom: 6em;
+  }
+  .hero h1 {
+    -webkit-margin-before: 0;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .super {
+    font-size: 2em;
+  }
+  .flex {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+  }
+
+  .flex-3 {
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+
+  .flex_children {
+    flex: 1 1 0;
+    margin: 0.4em;
+    padding: 0.5em;
+  }
+
+  .flex-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
